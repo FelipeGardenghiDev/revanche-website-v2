@@ -1,0 +1,6 @@
+{
+  "name": "Banda Revanche",
+  "description": "Site oficial da Banda Revanche — Tributo Fresno e Emo Anos 2000. Agenda de shows, integrantes, repertório, fotos e informações para contratação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

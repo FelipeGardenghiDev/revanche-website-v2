@@ -57,7 +57,7 @@ export default function BandaPage() {
                 Tendo como espinha dorsal a discografia da <strong>Fresno</strong> — passando por várias fases da banda —, o repertório também inclui sucessos de bandas como Green Day, Blink-182, Linkin Park, Fall Out Boy, My Chemical Romance, Forfun, Hevo84 e NX Zero.
               </p>
               <p>
-                O grupo é formado por músicos com anos de estrada, entregando um show autêntico, intenso e com identidade própria, trazendo também versões exclusivas que conectam a nostalgia dos anos 2000 à energia do palco ao vivo.
+                O grupo é formado por músicos com anos de estrada, entregando um show inesquecível, e trazendo também versões exclusivas que conectam a nostalgia dos anos 2000 à energia do palco ao vivo.
               </p>
             </div>
 

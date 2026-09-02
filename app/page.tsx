@@ -7,7 +7,7 @@ import { MediaSection } from '@/components/home/MediaSection';
 import { PartnersSection } from '@/components/home/PartnersSection';
 import { ContactSection } from '@/components/home/ContactSection';
 
-export const revalidate = 3600; // ISR revalidation every 1 hour
+export const revalidate = 300; // ISR revalidation every 5 minutes
 
 export default async function HomePage() {
   const [shows, highlightShow] = await Promise.all([

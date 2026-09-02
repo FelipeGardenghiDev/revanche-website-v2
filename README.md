@@ -48,7 +48,7 @@ O projeto original (**revanche-website v1**) foi desenvolvido em HTML5 e Vanilla
 
 ### 1. Dynamic Data Fetching com ISR (Incremental Static Regeneration)
 A agenda de shows e o show em destaque são alimentados por um serviço dinâmico em [`lib/shows/shows.ts`](lib/shows/shows.ts).
-- O Next.js consome a fonte de dados remota via fetch com revalidação de cache a cada 1 hora (`next: { revalidate: 3600 }`).
+- O Next.js consome a fonte de dados remota via fetch com revalidação de cache a cada 5 minutos (`next: { revalidate: 300 }`).
 - **Resiliência e Alta Disponibilidade**: Caso o serviço remoto fique indisponível ou sofra lentidão, a aplicação possui **fallbacks tipados** (`FALLBACK_SHOWS` e `FALLBACK_HIGHLIGHT`), garantindo que a página nunca quebre nem exiba telas brancas para o usuário.
 
 ### 2. SEO Técnico & Dados Estruturados (Google Rich Results)
@@ -66,9 +66,9 @@ A agenda de shows e o show em destaque são alimentados por um serviço dinâmic
 
 | Rota | Descrição | Estratégia de Renderização |
 | :--- | :--- | :--- |
-| `/` | Landing page principal: Hero com show em destaque dinâmico, agenda resumida, sobre a banda, player Spotify e parceiros. | **ISR (Revalidação 1h)** |
+| `/` | Landing page principal: Hero com show em destaque dinâmico, agenda resumida, sobre a banda, player Spotify e parceiros. | **ISR (Revalidação 5min)** |
 | `/banda` | Trajetória da banda, biografia dos integrantes e proposta artística. | **Static (SSG)** |
-| `/agenda` | Tabela detalhada e cards responsivos de shows com status (confirmado/em breve) e links de compra. | **ISR (Revalidação 1h)** |
+| `/agenda` | Tabela detalhada e cards responsivos de shows com status (confirmado/em breve) e links de compra. | **ISR (Revalidação 5min)** |
 | `/musica` | Discografia de referência, repertório e player integrado do Spotify. | **Static (SSG)** |
 | `/videos` | Galeria de apresentações ao vivo e vídeos promocionais. | **Static (SSG)** |
 | `/fotos` | Galeria em alta definição com botões de download direto para mídia e cartazes. | **Static (SSG)** |

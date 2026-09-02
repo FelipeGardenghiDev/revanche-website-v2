@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 3600;
+export const revalidate = 300; // ISR revalidation every 5 minutes
 
 export default async function AgendaPage() {
   const shows = await getShows();

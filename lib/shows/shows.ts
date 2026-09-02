@@ -57,12 +57,12 @@ const FALLBACK_HIGHLIGHT: HighlightShow = {
 
 /**
  * Retorna a lista de shows da Banda Revanche a partir do Gist oficial
- * com revalidação automática de cache a cada hora (ISR) e tratamento de falha.
+ * com revalidação automática de cache a cada 5 minutos (ISR) e tratamento de falha.
  */
 export async function getShows(): Promise<Show[]> {
   try {
     const response = await fetch(SHOWS_GIST_URL, {
-      next: { revalidate: 3600 },
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) {
@@ -88,7 +88,7 @@ export async function getShows(): Promise<Show[]> {
 export async function getHighlightShow(): Promise<HighlightShow | null> {
   try {
     const response = await fetch(HIGHLIGHT_GIST_URL, {
-      next: { revalidate: 3600 },
+      next: { revalidate: 300 },
     });
 
     if (!response.ok) {

@@ -9,7 +9,7 @@ export const bandMembers: BandMember[] = [
     imagePosition: 'scale-[1.16] origin-top',
     bioParagraphs: [
       'Músico desde os 13 anos, já participou de diversas bandas locais e projetos paralelos, sempre explorando o universo do rock, do pop e do emo. Já abriu shows de bandas relevantes do cenário emo, como Fresno e McFly.',
-      'Dentre algumas bandas em que passou, estão Patrulha 7 (lançando um álbum autoral, como baixista), Flop, Emopala, Hellboys (alguns singles lançados, também como baixista), Blue Drive, Rafael Puga Trio, entre várias outras — além de ter conhecido artistas renomados no cenário nacional, como NX Zero, Supercombo, Gustavo Bertoni (Scalene) e Emmily Barreto (Far From Alaska e Ego Kill Talent), e ter dividido palco com bandas e artistas como Linkin Park Cover Ribeirão, Kilotones, Ciça Moreira, Soberba, Green Day Cover Ribeirão, e mais.',
+      'Dentre algumas bandas em que passou, estão Patrulha 7 (lançando um álbum autoral, como baixista), Flop, Emopala, Hellboys (alguns singles lançados, também como baixista), Blue Drive, Rafael Puga Trio, entre várias outras — além de ter conhecido artistas renomados no cenário nacional, como Fresno, NX Zero, Hevo84, Supercombo, Gustavo Bertoni (Scalene) e Emmily Barreto (Far From Alaska e Ego Kill Talent), e ter feito participações com bandas e artistas como Linkin Park Cover Ribeirão, Kilotones, Ciça Moreira, Soberba, Green Day Cover Ribeirão, e mais.',
       'Além da banda, é desenvolvedor de software, cientista de dados e professor de música, e ainda teve uma breve carreira como Streamer de jogos indie na Twitch, onde ocasionalmente ainda aparece para interagir com a comunidade e compartilhar momentos divertidos e significativos entre antigos e novos amigos. Em 2023, fundou a banda Revanche para dar voz a um tributo Fresno e espalhar a palavra do emo por onde passar.',
     ],
     socials: {
@@ -39,9 +39,9 @@ export const bandMembers: BandMember[] = [
     role: 'Baixo / Voz de Apoio',
     image: '/images/integrantes/Yago.jpg',
     bioParagraphs: [
-      'Músico desde os 16 anos, tem uma trajetória marcada pela paixão pela música e pela integridade aos seus princípios. Já abriu shows de artistas relevantes da cena, como o Bruno Sutter em sua turnê de homenagem ao Iron Maiden.',
+      'Músico desde os 16 anos, tem uma trajetória marcada pela paixão pela música e pela integridade aos seus princípios. Já abriu shows de artistas relevantes da cena, como Hevo84, e Bruno Sutter em sua turnê de homenagem ao Iron Maiden.',
       'Além da Revanche, também é baixista da Nevermind (Nirvana Cover) ganhando premiações importantes na cena rock do interior paulista.',
-      'Fora da banda, esbanja carisma e piadas incríveis, além de amar qualquer bebida azul que encontrar.',
+      'Fora da banda, esbanja carisma e piadas incríveis (kkkk), além de amar qualquer bebida azul que encontrar.',
     ],
     socials: {
       instagram: 'https://instagram.com/kdodk138',

@@ -33,7 +33,7 @@ export const MemberBio: React.FC<MemberBioProps> = ({ member, index }) => {
               alt={`${member.name} — ${member.role}`}
               fill
               sizes="(max-width: 768px) 260px, 300px"
-              className="object-cover object-top brightness-100 contrast-100"
+              className={`object-cover object-top brightness-100 contrast-100 ${member.imagePosition || ''}`}
             />
           </div>
         </div>

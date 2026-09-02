@@ -10,6 +10,7 @@ export interface BandMember {
   name: string;
   role: string;
   image: string;
+  imagePosition?: string;
   bioParagraphs: string[];
   socials: MemberSocials;
 }

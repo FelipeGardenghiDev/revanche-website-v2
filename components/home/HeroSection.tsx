@@ -37,14 +37,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ highlightShow }) => {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8 lg:space-y-10">
           
           {/* Logo Principal Oficial */}
-          <div className="relative w-64 sm:w-80 md:w-96 lg:w-[460px] h-32 sm:h-40 md:h-48 lg:h-52 mx-auto">
+          <div className="relative w-72 sm:w-96 md:w-[500px] lg:w-[640px] xl:w-[720px] h-36 sm:h-48 md:h-60 lg:h-72 xl:h-80 mx-auto">
             <Image
               src="/logos/Logo-Revanche-PNG.png"
               alt="Logo Oficial Banda Revanche"
               fill
-              sizes="(max-width: 640px) 256px, (max-width: 768px) 320px, (max-width: 1024px) 384px, 460px"
+              sizes="(max-width: 640px) 300px, (max-width: 768px) 420px, (max-width: 1024px) 580px, 720px"
               priority
-              className="object-contain filter drop-shadow-[0_0_30px_rgba(171,34,23,0.7)]"
+              className="object-contain filter drop-shadow-[0_0_35px_rgba(171,34,23,0.75)]"
             />
           </div>
 

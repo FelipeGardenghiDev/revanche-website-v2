@@ -6,6 +6,7 @@ export const bandMembers: BandMember[] = [
     name: 'Felipe Gardenghi',
     role: 'Vocal / Guitarra',
     image: '/images/integrantes/Felipe.jpg',
+    imagePosition: 'scale-[1.16] origin-top',
     bioParagraphs: [
       'Músico desde os 13 anos, já participou de diversas bandas locais e projetos paralelos, sempre explorando o universo do rock, do pop e do emo. Já abriu shows de bandas relevantes do cenário emo, como Fresno e McFly.',
       'Dentre algumas bandas em que passou, estão Patrulha 7 (lançando um álbum autoral, como baixista), Flop, Emopala, Hellboys (alguns singles lançados, também como baixista), Blue Drive, Rafael Puga Trio, entre várias outras — além de ter conhecido artistas renomados no cenário nacional, como NX Zero, Supercombo, Gustavo Bertoni (Scalene) e Emmily Barreto (Far From Alaska e Ego Kill Talent), e ter dividido palco com bandas e artistas como Linkin Park Cover Ribeirão, Kilotones, Ciça Moreira, Soberba, Green Day Cover Ribeirão, e mais.',

@@ -54,10 +54,10 @@ export default function BandaPage() {
                 Fundada em 2023 em Ribeirão Preto/SP, a <strong>REVANCHE</strong> foi criada com um propósito direto: celebrar os grandes clássicos do emo e do rock dos anos 2000 em um show ao vivo.
               </p>
               <p>
-                Tendo como espinha dorsal a discografia da <strong>Fresno</strong> — passando por todas as fases da banda —, o repertório também inclui sucessos de nomes como NX Zero, CPM 22, My Chemical Romance e Paramore.
+                Tendo como espinha dorsal a discografia da <strong>Fresno</strong> — passando por várias fases da banda —, o repertório também inclui sucessos de bandas como Green Day, Blink-182, Linkin Park, Fall Out Boy, My Chemical Romance, Forfun, Hevo84 e NX Zero.
               </p>
               <p>
-                O grupo é formado por músicos com anos de estrada, entregando um show focado na qualidade musical e no respeito aos arranjos originais que marcaram época.
+                O grupo é formado por músicos com anos de estrada, entregando um show visceral e com identidade própria, trazendo também versões exclusivas que conectam a nostalgia dos anos 2000 à potência do palco ao vivo.
               </p>
             </div>
 

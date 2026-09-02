@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/musica',
     '/videos',
     '/fotos',
+    '/merch',
     '/imprensa',
     '/contato',
   ];

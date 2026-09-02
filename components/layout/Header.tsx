@@ -14,6 +14,7 @@ const desktopNavItems = [
   { label: 'Agenda', href: '/agenda' },
   { label: 'Música', href: '/musica' },
   { label: 'Fotos', href: '/fotos' },
+  { label: 'Merch', href: '/merch' },
   { label: 'Imprensa', href: '/imprensa' },
 ];
 
@@ -24,6 +25,7 @@ const mobileNavItems = [
   { label: 'Música & Repertório', href: '/musica' },
   { label: 'Vídeos & Redes', href: '/videos' },
   { label: 'Galeria de Fotos', href: '/fotos' },
+  { label: 'Merch Oficial', href: '/merch' },
   { label: 'Imprensa & Rider', href: '/imprensa' },
   { label: 'Contato & Booking', href: '/contato' },
 ];

@@ -24,7 +24,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({ member, priority = false
             fill
             sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, 260px"
             priority={priority}
-            className="object-cover object-top brightness-100 contrast-100 group-hover:scale-105 transition-transform duration-500"
+            className={`object-cover object-top brightness-100 contrast-100 group-hover:scale-105 transition-transform duration-500 ${member.imagePosition || ''}`}
           />
           {/* Overlay suave apenas na base para leitura do nome sem esconder o rosto */}
           <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#000000]/90 to-transparent pointer-events-none" />

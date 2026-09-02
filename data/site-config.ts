@@ -34,6 +34,7 @@ export const mainNavItems: NavItem[] = [
   { label: 'Música', href: '/musica' },
   { label: 'Vídeos', href: '/videos' },
   { label: 'Fotos', href: '/fotos' },
+  { label: 'Merch', href: '/merch' },
   { label: 'Imprensa', href: '/imprensa' },
   { label: 'Contato', href: '/contato' },
 ];

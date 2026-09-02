@@ -10,6 +10,27 @@ export interface Partner {
   image: string;
 }
 
+export interface EventGallery {
+  id: string;
+  eventName: string;
+  date: string;
+  venue: string;
+  city: string;
+  driveUrl: string;
+  coverImage?: string;
+  photographer?: string;
+}
+
+export interface MerchItem {
+  id: string;
+  name: string;
+  category: string;
+  estimatedPrice: string;
+  image: string;
+  status: 'em_breve' | 'em_producao' | 'disponivel';
+  sizes?: string[];
+}
+
 export interface SiteConfig {
   name: string;
   tagline: string;

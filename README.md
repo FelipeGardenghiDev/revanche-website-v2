@@ -71,7 +71,8 @@ A agenda de shows e o show em destaque são alimentados por um serviço dinâmic
 | `/agenda` | Tabela detalhada e cards responsivos de shows com status (confirmado/em breve) e links de compra. | **ISR (Revalidação 5min)** |
 | `/musica` | Discografia de referência, repertório e player integrado do Spotify. | **Static (SSG)** |
 | `/videos` | Galeria de apresentações ao vivo e vídeos promocionais. | **Static (SSG)** |
-| `/fotos` | Galeria em alta definição com botões de download direto para mídia e cartazes. | **Static (SSG)** |
+| `/fotos` | Galeria com retratos individuais e links diretos para pastas de shows no Google Drive para os fãs. | **Static (SSG)** |
+| `/merch` | Catálogo de produtos e merch oficial (camisetas, palhetas, etc.) em fase de implantação. | **Static (SSG)** |
 | `/imprensa` | Mídia Kit institucional, release oficial para jornalistas e link direto para pasta em nuvem. | **Static (SSG)** |
 | `/contato` | Formulário de contato, link direto para WhatsApp de contratação e dados de assessoria. | **Static (SSG)** |
 

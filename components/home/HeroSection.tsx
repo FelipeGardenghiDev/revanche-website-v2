@@ -37,14 +37,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ highlightShow }) => {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8 lg:space-y-10">
           
           {/* Logo Principal Oficial */}
-          <div className="relative w-72 sm:w-96 md:w-[500px] lg:w-[640px] xl:w-[720px] h-36 sm:h-48 md:h-60 lg:h-72 xl:h-80 mx-auto">
+          <div className="relative w-[90vw] max-w-[360px] sm:max-w-[480px] md:max-w-[580px] lg:max-w-[680px] xl:max-w-[760px] h-52 sm:h-64 md:h-72 lg:h-80 xl:h-96 mx-auto flex items-center justify-center">
             <Image
               src="/logos/Logo-Revanche-PNG.png"
               alt="Logo Oficial Banda Revanche"
               fill
-              sizes="(max-width: 640px) 300px, (max-width: 768px) 420px, (max-width: 1024px) 580px, 720px"
+              sizes="(max-width: 640px) 95vw, (max-width: 768px) 480px, (max-width: 1024px) 680px, 760px"
               priority
-              className="object-contain filter drop-shadow-[0_0_35px_rgba(171,34,23,0.75)]"
+              className="object-contain filter drop-shadow-[0_0_35px_rgba(171,34,23,0.75)] scale-135 sm:scale-120 md:scale-110 transition-transform duration-300"
             />
           </div>
 
@@ -112,12 +112,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ highlightShow }) => {
           )}
 
           {/* Ações Rápidas */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 w-full max-w-xs sm:max-w-none mx-auto">
             <Button
               href="/agenda"
               variant="primary"
               size="lg"
-              className="gap-2 shadow-xl text-sm sm:text-base font-black tracking-wider"
+              className="w-full sm:w-auto gap-2 shadow-xl text-sm sm:text-base font-black tracking-wider"
             >
               <Calendar className="w-5 h-5" />
               <span>Ver Agenda de Shows</span>
@@ -127,7 +127,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ highlightShow }) => {
               variant="outline"
               size="lg"
               isExternal
-              className="gap-2 text-sm sm:text-base font-bold"
+              className="w-full sm:w-auto gap-2 text-sm sm:text-base font-bold"
             >
               <Music2 className="w-5 h-5 text-[#AB2217]" />
               <span>Ouvir no Spotify</span>

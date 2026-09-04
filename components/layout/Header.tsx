@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, PhoneCall, ChevronRight } from 'lucide-react';
 import { siteConfig } from '@/data/site-config';
@@ -101,23 +100,13 @@ export const Header: React.FC = () => {
       >
         <Container size="lg">
           <div className="flex items-center justify-between">
-            {/* Logo Oficial */}
+            {/* Identificação Textual */}
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className="flex items-center space-x-2.5 sm:space-x-3 group focus-visible:outline-none shrink-0"
+              className="flex items-center group focus-visible:outline-none shrink-0"
               aria-label="Banda Revanche - Página Inicial"
             >
-              <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center">
-                <Image
-                  src="/logos/Logo-Revanche-PNG.png"
-                  alt="Logo Revanche"
-                  fill
-                  sizes="40px"
-                  priority
-                  className="object-contain filter drop-shadow-[0_0_10px_#AB2217] scale-125"
-                />
-              </div>
               <span className="text-xl sm:text-2xl font-black tracking-widest text-[#D9CDB5] group-hover:text-[#AB2217] transition-colors">
                 REVANCHE
               </span>

@@ -41,15 +41,6 @@ export const MerchSection: React.FC = () => {
               Estamos finalizando a confecção dos primeiros lotes de camisetas, palhetas de palco e itens colecionáveis. Os produtos estarão disponíveis para compra direta nos shows e com envio para todo o Brasil.
             </p>
           </div>
-          <a
-            href={whatsappMerchUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs font-black uppercase bg-[#AB2217] text-[#FFFFFF] hover:bg-[#AB2217]/85 py-3 px-5 rounded transition-colors shrink-0 shadow-md"
-          >
-            <MessageCircle className="w-4 h-4" />
-            <span>Lista de Espera</span>
-          </a>
         </div>
 
         {/* Grid de Produtos */}

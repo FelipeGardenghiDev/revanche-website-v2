@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import bandaHistoriaImg from '@/public/images/banda/banda-historia.webp';
 import { bandMembers } from '@/data/members';
 import { Container } from '@/components/layout/Container';
 import { MemberBio } from '@/components/band/MemberBio';
@@ -34,14 +35,14 @@ export default function BandaPage() {
 
         {/* Foto Oficial da Formação & Manifesto */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-20 p-8 sm:p-10 bg-[#000000]/70 border-2 border-[#AB2217] rounded-lg shadow-2xl">
-          <div className="lg:col-span-6 relative aspect-[16/10] overflow-hidden rounded border-2 border-[#D9CDB5]">
+          <div className="lg:col-span-6 relative aspect-[16/9] overflow-hidden rounded border-2 border-[#D9CDB5]">
             <Image
-              src="/images/banda/banda.jpg"
+              src={bandaHistoriaImg}
               alt="Formação Completa da Banda Revanche"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
 
@@ -51,7 +52,7 @@ export default function BandaPage() {
             </h2>
             <div className="space-y-4 text-base sm:text-lg text-[#D9CDB5]/90 leading-relaxed font-normal">
               <p>
-                Fundada em 2023 em Ribeirão Preto/SP, a <strong>REVANCHE</strong> foi criada com um propósito direto: celebrar os grandes clássicos do emo e do rock dos anos 2000 em um show ao vivo.
+                Fundada em 2023 em Ribeirão Preto/SP, e com reestreia em 2025, a <strong>REVANCHE</strong> foi criada com um propósito direto: celebrar os grandes clássicos do emo e do rock dos anos 2000 em um show ao vivo.
               </p>
               <p>
                 Tendo como espinha dorsal a discografia da <strong>Fresno</strong> — passando por várias fases da banda —, o repertório também inclui sucessos de bandas como Green Day, Blink-182, Linkin Park, Fall Out Boy, My Chemical Romance, Forfun, Hevo84 e NX Zero.

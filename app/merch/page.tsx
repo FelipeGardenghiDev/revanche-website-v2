@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { ShoppingBag, Sparkles, MessageCircle, Truck, CreditCard, ShieldCheck } from 'lucide-react';
+import { ShoppingBag, Sparkles, Truck, CreditCard, ShieldCheck } from 'lucide-react';
 import { Container } from '@/components/layout/Container';
-import { Button } from '@/components/ui/Button';
 import { merchItems } from '@/data/merch';
 import { siteConfig } from '@/data/site-config';
 
@@ -16,10 +15,6 @@ export const metadata: Metadata = {
 };
 
 export default function MerchPage() {
-  const whatsappMerchUrl = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(
-    'Olá! Gostaria de entrar na lista de espera para o lançamento do Merch Oficial da banda Revanche!'
-  )}`;
-
   return (
     <div className="pt-28 pb-20 lg:pt-36 lg:pb-28">
       <Container size="lg">
@@ -38,7 +33,7 @@ export default function MerchPage() {
         </div>
 
         {/* Banner de Aviso de Construção */}
-        <div className="mb-16 p-8 sm:p-10 bg-[#000000]/90 border-2 border-[#AB2217] rounded-lg text-center max-w-3xl mx-auto space-y-6 shadow-2xl">
+        <div className="mb-16 p-8 sm:p-10 bg-[#000000]/90 border-2 border-[#AB2217] rounded-lg text-center max-w-3xl mx-auto space-y-4 shadow-2xl">
           <div className="w-16 h-16 rounded-full bg-[#AB2217]/20 border border-[#AB2217] flex items-center justify-center mx-auto text-[#AB2217]">
             <ShoppingBag className="w-8 h-8" />
           </div>
@@ -49,19 +44,6 @@ export default function MerchPage() {
             <p className="text-base text-[#D9CDB5]/90 max-w-xl mx-auto leading-relaxed">
               Nossa loja virtual está sendo preparada para oferecer pagamento facilitado via <strong>PIX</strong> e envio para todo o território nacional. Em breve você poderá garantir seus itens aqui ou diretamente em nossa bancada de merch nos shows.
             </p>
-          </div>
-
-          <div className="pt-2">
-            <Button
-              href={whatsappMerchUrl}
-              variant="primary"
-              size="lg"
-              isExternal
-              className="gap-2 font-bold"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>Entrar na Lista de Espera</span>
-            </Button>
           </div>
         </div>
 

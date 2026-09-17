@@ -53,7 +53,7 @@ export const bandMembers: BandMember[] = [
     role: 'Bateria',
     image: '/images/integrantes/Leonan.jpg',
     bioParagraphs: [
-      'Músico desde os 12 anos, consolidou sua trajetória como baterista na Revanche, trazendo potência, precisão e presença de palco para a banda.',
+      'Músico desde os 12 anos, consolidou sua trajetória como baterista na Revanche, trazendo potência, precisão e presença de palco para a banda. Também já fez abertura do show da Hevo84.',
       'Além da Revanche, é vocalista/guitarrista da Green Day Cover Ribeirão, e multi-instrumentista/compositor na Crems, expandindo sua atuação dentro do universo do rock e suas vertentes.',
       'Fora da banda, é empresário e gestor de tráfego, unindo criatividade e performance com estratégia e visão de negócios.',
     ],

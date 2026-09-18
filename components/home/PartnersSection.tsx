@@ -18,7 +18,11 @@ export const PartnersSection: React.FC = () => {
         </div>
 
         {/* Grade Discreta e Elegante de Parceiros */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
+        <div
+          className={`grid grid-cols-1 ${
+            partners.length === 2 ? 'sm:grid-cols-2 max-w-2xl' : 'sm:grid-cols-3 max-w-3xl'
+          } gap-6 md:gap-8 mx-auto`}
+        >
           {partners.map((partner) => (
             <a
               key={partner.name}

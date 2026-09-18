@@ -156,9 +156,18 @@ export default function RootLayout({
         )}
       </head>
       <body className="bg-[#000000] text-[#D9CDB5] min-h-screen flex flex-col font-sans selection:bg-[#AB2217] selection:text-[#FFFFFF]">
+        {/* Link de Salto Acessível (WCAG 2.4.1) */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-[#AB2217] focus:text-[#D9CDB5] focus:font-black focus:uppercase focus:text-xs focus:tracking-wider focus:border-2 focus:border-[#D9CDB5] focus:shadow-[0_0_25px_rgba(0,0,0,0.9)] focus:rounded focus:outline-none"
+        >
+          Pular para o conteúdo principal
+        </a>
         <div className="bg-band-overlay" aria-hidden="true" />
         <Header />
-        <main className="flex-1 relative z-10">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex-1 relative z-10 focus:outline-none">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

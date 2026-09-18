@@ -2,6 +2,7 @@
 
 @theme {
   --color-rev-primary: #AB2217;
+  --color-rev-accent: #E5392B;
   --color-rev-secondary: #D9CDB5;
   --color-rev-black: #000000;
   --color-rev-white: #FFFFFF;
@@ -75,6 +76,10 @@
 
 .text-rev-primary {
   color: #AB2217;
+}
+
+.text-rev-accent {
+  color: #E5392B;
 }
 
 .text-rev-secondary {

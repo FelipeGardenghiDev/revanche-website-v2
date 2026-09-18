@@ -9,7 +9,7 @@ export const PartnersSection: React.FC = () => {
     <section id="parceiros" className="py-16 lg:py-20 relative z-10 border-t border-[#D9CDB5]/10">
       <Container size="lg">
         <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-          <span className="text-xs font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-xs font-black text-[#E5392B] uppercase tracking-widest">
             Apoio & Parcerias
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-[#D9CDB5] uppercase tracking-wider">

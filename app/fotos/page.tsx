@@ -27,7 +27,7 @@ export default async function FotosPage() {
       <Container size="lg">
         {/* Cabeçalho */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs sm:text-sm font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-xs sm:text-sm font-black text-[#E5392B] uppercase tracking-widest">
             Galeria & Acervo
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#D9CDB5] uppercase tracking-wider">
@@ -41,7 +41,7 @@ export default async function FotosPage() {
         {/* Seção de Pastas do Google Drive em Formato Carrossel */}
         <div className="mb-20 space-y-6">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-black text-[#AB2217] uppercase tracking-widest flex items-center justify-center gap-1.5">
+            <span className="text-xs font-black text-[#E5392B] uppercase tracking-widest flex items-center justify-center gap-1.5">
               <FolderOpen className="w-4 h-4" />
               <span>Para os Fãs & Fotógrafos</span>
             </span>

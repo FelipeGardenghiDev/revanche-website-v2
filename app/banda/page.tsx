@@ -22,7 +22,7 @@ export default function BandaPage() {
       <Container>
         {/* Cabeçalho da Página */}
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <span className="text-sm font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-sm font-black text-[#E5392B] uppercase tracking-widest">
             Tributo Fresno & Emo 2000
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#D9CDB5] uppercase tracking-wider">

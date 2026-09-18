@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, PhoneCall, ChevronRight } from 'lucide-react';
@@ -12,9 +12,9 @@ const desktopNavItems = [
   { label: 'A Banda', href: '/banda' },
   { label: 'Agenda', href: '/agenda' },
   { label: 'Música', href: '/musica' },
-  { label: 'Fotos', href: '/fotos' },
+  { label: 'Galeria', href: '/fotos' },
   { label: 'Merch', href: '/merch' },
-  { label: 'Imprensa', href: '/imprensa' },
+  { label: 'Produção', href: '/imprensa' },
 ];
 
 const mobileNavItems = [
@@ -23,9 +23,9 @@ const mobileNavItems = [
   { label: 'Agenda de Shows', href: '/agenda' },
   { label: 'Música & Repertório', href: '/musica' },
   { label: 'Vídeos & Redes', href: '/videos' },
-  { label: 'Galeria de Fotos', href: '/fotos' },
+  { label: 'Galeria & Coberturas', href: '/fotos' },
   { label: 'Merch Oficial', href: '/merch' },
-  { label: 'Imprensa & Rider', href: '/imprensa' },
+  { label: 'Produção & Rider', href: '/imprensa' },
   { label: 'Contato & Booking', href: '/contato' },
 ];
 
@@ -33,6 +33,9 @@ export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const toggleBtnRef = useRef<HTMLButtonElement>(null);
+  const previouslyFocusedElementRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,6 +89,53 @@ export const Header: React.FC = () => {
     return () => {
       document.body.style.overflow = '';
     };
+  }, [isOpen]);
+
+  // Focus trap para acessibilidade no menu mobile (WCAG 2.4.3 / WAI-ARIA Modal)
+  useEffect(() => {
+    if (isOpen) {
+      previouslyFocusedElementRef.current = document.activeElement as HTMLElement;
+
+      const handleTabKey = (e: KeyboardEvent) => {
+        if (e.key !== 'Tab') return;
+
+        const drawer = drawerRef.current;
+        const toggleBtn = toggleBtnRef.current;
+        if (!drawer) return;
+
+        const focusableInsideDrawer = Array.from(
+          drawer.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+          )
+        );
+
+        const allFocusable = [toggleBtn, ...focusableInsideDrawer].filter(Boolean) as HTMLElement[];
+        if (allFocusable.length === 0) return;
+
+        const firstElement = allFocusable[0];
+        const lastElement = allFocusable[allFocusable.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement.focus();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement.focus();
+          }
+        }
+      };
+
+      window.addEventListener('keydown', handleTabKey);
+      return () => {
+        window.removeEventListener('keydown', handleTabKey);
+      };
+    } else if (previouslyFocusedElementRef.current) {
+      previouslyFocusedElementRef.current.focus?.();
+      previouslyFocusedElementRef.current = null;
+    }
   }, [isOpen]);
 
   return (
@@ -152,6 +202,7 @@ export const Header: React.FC = () => {
             {/* Mobile Menu Button */}
             <button
               id="mobile-menu-btn"
+              ref={toggleBtnRef}
               type="button"
               className="lg:hidden p-2.5 -mr-2 text-[#D9CDB5] hover:text-[#AB2217] active:scale-95 focus:outline-none transition-all rounded-lg focus-visible:ring-2 focus-visible:ring-[#AB2217]"
               onClick={() => setIsOpen(!isOpen)}
@@ -169,9 +220,13 @@ export const Header: React.FC = () => {
         </Container>
       </header>
 
-      {/* Mobile Drawer / Fullscreen Navigation Overlay */}
+      {/* Mobile Drawer / Fullscreen Navigation Overlay (WAI-ARIA Dialog) */}
       <div
         id="mobile-navigation"
+        ref={drawerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu de Navegação Mobile"
         className={`lg:hidden fixed inset-0 z-40 bg-[#000000]/98 backdrop-blur-2xl transition-all duration-300 ease-in-out ${
           isOpen
             ? 'opacity-100 pointer-events-auto visible'

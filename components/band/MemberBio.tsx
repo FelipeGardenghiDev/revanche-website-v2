@@ -48,7 +48,7 @@ export const MemberBio: React.FC<MemberBioProps> = ({ member, index }) => {
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#D9CDB5] uppercase tracking-wide">
               {member.name}
             </h3>
-            <p className="text-base sm:text-lg font-bold text-[#AB2217] uppercase">
+            <p className="text-base sm:text-lg font-bold text-[#E5392B] uppercase">
               {member.role}
             </p>
           </div>

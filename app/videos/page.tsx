@@ -19,7 +19,7 @@ export default function VideosPage() {
       <Container size="lg">
         {/* Cabeçalho */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs sm:text-sm font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-xs sm:text-sm font-black text-[#E5392B] uppercase tracking-widest">
             Audiovisual & Redes
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#D9CDB5] uppercase tracking-wider">

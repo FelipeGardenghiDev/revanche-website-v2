@@ -14,7 +14,7 @@ export const BandSection: React.FC<BandSectionProps> = ({ showButton = true }) =
       <Container size="lg">
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto mb-14 lg:mb-16 space-y-4">
-          <span className="text-xs sm:text-sm font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-xs sm:text-sm font-black text-[#E5392B] uppercase tracking-widest">
             Formação Oficial
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#D9CDB5] uppercase tracking-wider">

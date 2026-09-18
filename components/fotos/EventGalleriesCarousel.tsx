@@ -81,7 +81,7 @@ export const EventGalleriesCarousel: React.FC<EventGalleriesCarouselProps> = ({ 
           >
             <div className="space-y-3">
               <div className="flex items-center justify-between border-b border-[#D9CDB5]/10 pb-3">
-                <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase text-[#AB2217]">
+                <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase text-[#E5392B]">
                   <Calendar className="w-3.5 h-3.5" />
                   <span>{gallery.date}</span>
                 </span>

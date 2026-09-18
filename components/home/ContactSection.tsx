@@ -9,7 +9,7 @@ export const ContactSection: React.FC = () => {
     <section id="contato" className="py-20 lg:py-28 relative z-10 border-t border-[#AB2217]/30 bg-[#000000]/80">
       <Container size="lg">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <span className="text-xs sm:text-sm font-black text-[#AB2217] uppercase tracking-widest">
+          <span className="text-xs sm:text-sm font-black text-[#E5392B] uppercase tracking-widest">
             Shows & Eventos
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#D9CDB5] uppercase tracking-wider">

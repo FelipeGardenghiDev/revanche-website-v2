@@ -33,8 +33,8 @@ export const mainNavItems: NavItem[] = [
   { label: 'Agenda', href: '/agenda' },
   { label: 'Música', href: '/musica' },
   { label: 'Vídeos', href: '/videos' },
-  { label: 'Fotos', href: '/fotos' },
+  { label: 'Galeria', href: '/fotos' },
   { label: 'Merch', href: '/merch' },
-  { label: 'Imprensa', href: '/imprensa' },
+  { label: 'Produção', href: '/imprensa' },
   { label: 'Contato', href: '/contato' },
 ];

@@ -16,7 +16,7 @@ export const MerchSection: React.FC = () => {
       <Container size="lg">
         {/* Cabeçalho */}
         <div className="text-center max-w-3xl mx-auto mb-14 lg:mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#AB2217]/20 border border-[#AB2217] text-[#AB2217] text-xs font-black uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#AB2217]/20 border border-[#AB2217] text-[#E5392B] text-xs font-black uppercase tracking-widest">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Em Construção • Em Breve</span>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import { siteConfig } from '@/data/site-config';
 import { Header } from '@/components/layout/Header';
@@ -169,6 +170,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
